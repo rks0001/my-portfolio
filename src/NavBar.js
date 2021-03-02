@@ -7,16 +7,16 @@ export default function NavBar() {
         <header className="bg-black">
             <div className="container mx-auto text-white flex justify-between">
                 <nav className="flex">
-                    <NavLink to="/" exact activeClassName="text-white" className="inflex-flex items-center py-10 px-6 my-0 mr-4 text-white hover:text-red-300  font-bold text-3xl cursive tracking-widest">
+                    <NavLink to="/" exact activeClassName="text-white" className="inline-flex items-center py-10 px-6 my-0 mr-4 text-white hover:text-green-400  font-bold text-2xl cursive tracking-wider">
                         Ranjit Kalita
                     </NavLink>
-                    <NavLink to="/youtube" activeClassName="text-white " className="inline-flex items-center py-2 px-4  my-0  text-white hover:text-red-300 text-xl cursive">
+                    <NavLink to="/youtube" activeClassName="text-white " className="inline-flex items-center py-2 px-8  my-0  text-white hover:text-red-400 text-lg cursive ">
                         YouTube
                     </NavLink>
-                    <NavLink to="/project" activeClassName="text-white " className="inline-flex items-center py-2 px-4 my-0  text-white hover:text-red-300 text-xl cursive">
+                    <NavLink to="/project" activeClassName="text-white " className="inline-flex items-center py-2 px-8 my-0  text-white hover:text-blue-400 text-lg cursive">
                         Projects
                     </NavLink>
-                    <NavLink to="/about" activeClassName="text-white" className="inline-flex items-center py-2 px-4 my-0  text-white hover:text-red-300 text-xl cursive">
+                    <NavLink to="/about" activeClassName="text-white" className="inline-flex items-center py-2 px-8 my-0  text-white hover:text-yellow-400 text-lg cursive">
                         About Me
                     </NavLink>
 
