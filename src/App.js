@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "./Home.js";
 import About from "./About.js";
 import SinglePost from "./SinglePost.js";
-import YouTube from "./Post.js";
+import YouTube from "./Youtube.js";
 import Project from "./Project.js";
 import NavBar from "./NavBar";
 function App() {
@@ -13,7 +13,7 @@ function App() {
         <Route component={Home} path='/' exact />
         <Route component={About} path='/about' />
         <Route component={SinglePost} path='/post/:slug' />
-        <Route component={YouTube} path='/post' />
+        <Route component={YouTube} path='/youtube' />
         <Route component={Project} path='/project' />
       </Switch>
     </BrowserRouter>
