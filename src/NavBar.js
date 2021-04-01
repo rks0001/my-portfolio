@@ -1,10 +1,11 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
 import { SocialIcon } from "react-social-icons";
+import styled from 'styled-components';
 
 export default function NavBar() {
     return (
-        <header className="bg-black">
+        <Container>
             <div className="container mx-auto text-white flex justify-between">
                 <nav className="flex">
                     <NavLink to="/" exact activeClassName="text-white " className="inline-flex items-center py-10 px-6 my-0 mr-4 text-white hover:text-green-400  font-bold text-2xl cursive tracking-tighter">
@@ -27,6 +28,10 @@ export default function NavBar() {
                     <SocialIcon url="https://twitter.com/ranjitkalita5o5" className="mr-4" target="_blank" fgColor='#fff' style={{ height: 35, width: 35 }} />
                 </div>
             </div>
-        </header >
+        </Container >
     )
 }
+
+const Container = styled.div`
+background-color:black;
+`

@@ -1,15 +1,50 @@
 import React from 'react';
 import image from "./prof-pixel.png"
+import styled from 'styled-components';
 
 export default function Home() {
     return (
-        <main>
-            <section className="relative flex justify-center ">
-            <img src={image} alt="profile_picture" className="home-profile "/>
-            </section>
-            <section className="relative flex justify-center pt-3 lg:pt-12 px-8">
-                <h1 className="text-3xl text-white font-bold cursive leading-none lg:leading-snug home-name">Hi 👋 I'm Ranjit</h1>
-            </section> 
-        </main>
+        <Container>
+            <Section>
+            <Img src={image} alt="profile_picture" />
+            </Section>
+            <SectionTwo>
+                <Greeting className="typewriter">Hi <Wave className ="wave">👋</Wave> I'm Ranjit</Greeting>
+            </SectionTwo>  
+        </Container>
     )
 } 
+
+const Container = styled.div`
+
+
+`
+const Section = styled.div`
+position:relative;
+display:flex;
+justify-content:center;
+`
+const Img = styled.img`
+width: 300px;
+height: 300px;
+
+`
+const SectionTwo = styled.div`
+position:relative;
+display:flex;
+justify-content:center;
+padding:3px 8px 0px 0px;
+font-family: "Press Start 2P", cursive;
+font-weight: 300;
+
+`
+const Wave = styled.div`
+
+
+`
+const Greeting = styled.div`
+color:white;
+font-size:50px;
+font-weight:bold;
+
+`
